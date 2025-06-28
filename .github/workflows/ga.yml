@@ -1,0 +1,25 @@
+name: GA Demo Workflow
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout Code
+              uses: actions/checkout@v2
+
+            - name: Set up Python
+              uses: actions/setup-python@v2
+              with:
+                python-version: '3.12'
+
+            - name: Install Dependencies
+              run: |
+                python3 -m pip install --upgrade pip
+                pip install --no-chache-dir -r requirements.txt
+                
