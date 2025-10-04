@@ -1,3 +1,10 @@
-# GitHub Actions Class 2 Demo
+# GitHub Actions Class Demo
 
-Updates to workflow configuration variables
+...
+
+## Prerequisites
+
+## Getting Started 
+
+## How to run
+
